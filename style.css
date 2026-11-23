@@ -1,0 +1,105 @@
+n/* استایل کلی */
+body {
+    font-family: 'Tahoma', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px ;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+
+/* بخش هیولا و بازیکن */
+#monster, #player {
+    text-align: center;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* نوار سلامتی (Healthbar) */
+.healthbar {
+    width: 100%;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.healthbar__value {
+    width: 100%;
+    height: 100%;
+    background-color: #4caf50; /* رنگ سبز */
+    transition: width 0.3s ease;
+}
+
+/* دکمه‌ها */
+#controls {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    width: 80%;
+    max-width: 800px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Tahoma', sans-serif;
+    transition: background-color 0.3s;
+}
+
+#attack-btn { background-color: #007bff; }
+#attack-btn:hover { background-color: #0056b3; }
+
+#strong-attack-btn { background-color: #ff9800; }
+#strong-attack-btn:hover { background-color: #e68a00; }
+
+#heal-btn { background-color: #4caf50; }
+#heal-btn:hover { background-color: #3e8e41; }
+
+#give-up-btn { background-color: #dc3545; }
+#give-up-btn:hover { background-color: #a71d2a; }
+
+/* بخش لاگ (گزارش نبرد) */
+#log {
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#log-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#log-list li {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+#log-list li:last-child {
+    border-bottom: none;
+}

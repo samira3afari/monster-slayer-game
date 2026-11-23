@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بازی شکارچی هیولا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>شکارچی هیولا</h1>
+    </header>
+
+    <section id="monster">
+        <h2>هیولا</h2>
+        <div class="healthbar">
+            <div id="monster-health" class="healthbar__value"></div>
+        </div>
+        <img src="https://cdn-icons-png.flaticon.com/512/1665/1665690.png" alt="Monster" width="150">
+    </section>
+
+    <section id="player">
+        <h2>شما</h2>
+        <div class="healthbar">
+            <div id="player-health" class="healthbar__value"></div>
+        </div>
+        <img src="https://cdn-icons-png.flaticon.com/512/21/21104.png" alt="Player" width="150">
+    </section>
+
+    <section id="controls">
+        <button id="attack-btn">حمله</button>
+        <button id="strong-attack-btn">حمله قدرتمند</button>
+        <button id="heal-btn">درمان</button>
+        <button id="give-up-btn">تسلیم شدن</button>
+    </section>
+
+    <section id="log">
+        <h2>گزارش نبرد</h2>
+        <ul id="log-list"></ul>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
